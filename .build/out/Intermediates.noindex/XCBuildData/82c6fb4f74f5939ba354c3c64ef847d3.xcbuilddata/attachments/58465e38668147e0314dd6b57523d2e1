@@ -1,0 +1,109 @@
+{
+  "" : {
+    "diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/DeskJetPro-primary.dia",
+    "emit-module-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/DeskJetPro-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/DeskJetPro-primary-emit-module.dia",
+    "pch" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/DeskJetPro-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/DeskJetPro-primary.swiftdeps"
+  },
+  "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/Sources/App.swift" : {
+    "const-values" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/App.swiftconstvalues",
+    "dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/App.d",
+    "diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/App.dia",
+    "index-unit-output-path" : "/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/App.o",
+    "llvm-bc" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/App.bc",
+    "object" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/App.o",
+    "swift-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/App.swiftdeps",
+    "swiftmodule" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/App~partial.swiftmodule"
+  },
+  "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/Sources/ContentView.swift" : {
+    "const-values" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/Sources/Models.swift" : {
+    "const-values" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/Models.swiftconstvalues",
+    "dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/Models.d",
+    "diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/Models.dia",
+    "index-unit-output-path" : "/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/Models.o",
+    "llvm-bc" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/Models.bc",
+    "object" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/Models.o",
+    "swift-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/Models.swiftdeps",
+    "swiftmodule" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/Models~partial.swiftmodule"
+  },
+  "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/Sources/PrinterService.swift" : {
+    "const-values" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrinterService.swiftconstvalues",
+    "dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrinterService.d",
+    "diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrinterService.dia",
+    "index-unit-output-path" : "/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrinterService.o",
+    "llvm-bc" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrinterService.bc",
+    "object" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrinterService.o",
+    "swift-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrinterService.swiftdeps",
+    "swiftmodule" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrinterService~partial.swiftmodule"
+  },
+  "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/Sources/ScannerService.swift" : {
+    "const-values" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScannerService.swiftconstvalues",
+    "dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScannerService.d",
+    "diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScannerService.dia",
+    "index-unit-output-path" : "/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScannerService.o",
+    "llvm-bc" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScannerService.bc",
+    "object" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScannerService.o",
+    "swift-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScannerService.swiftdeps",
+    "swiftmodule" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScannerService~partial.swiftmodule"
+  },
+  "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/Sources/Views/PrintView.swift" : {
+    "const-values" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrintView.swiftconstvalues",
+    "dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrintView.d",
+    "diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrintView.dia",
+    "index-unit-output-path" : "/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrintView.o",
+    "llvm-bc" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrintView.bc",
+    "object" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrintView.o",
+    "swift-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrintView.swiftdeps",
+    "swiftmodule" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/PrintView~partial.swiftmodule"
+  },
+  "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/Sources/Views/QueueView.swift" : {
+    "const-values" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/QueueView.swiftconstvalues",
+    "dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/QueueView.d",
+    "diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/QueueView.dia",
+    "index-unit-output-path" : "/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/QueueView.o",
+    "llvm-bc" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/QueueView.bc",
+    "object" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/QueueView.o",
+    "swift-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/QueueView.swiftdeps",
+    "swiftmodule" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/QueueView~partial.swiftmodule"
+  },
+  "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/Sources/Views/ScanView.swift" : {
+    "const-values" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScanView.swiftconstvalues",
+    "dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScanView.d",
+    "diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScanView.dia",
+    "index-unit-output-path" : "/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScanView.o",
+    "llvm-bc" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScanView.bc",
+    "object" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScanView.o",
+    "swift-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScanView.swiftdeps",
+    "swiftmodule" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/ScanView~partial.swiftmodule"
+  },
+  "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/Sources/Views/StatusView.swift" : {
+    "const-values" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/StatusView.swiftconstvalues",
+    "dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/StatusView.d",
+    "diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/StatusView.dia",
+    "index-unit-output-path" : "/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/StatusView.o",
+    "llvm-bc" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/StatusView.bc",
+    "object" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/StatusView.o",
+    "swift-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/StatusView.swiftdeps",
+    "swiftmodule" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/StatusView~partial.swiftmodule"
+  },
+  "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/Sources/XMLParsers.swift" : {
+    "const-values" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/XMLParsers.swiftconstvalues",
+    "dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/XMLParsers.d",
+    "diagnostics" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/XMLParsers.dia",
+    "index-unit-output-path" : "/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/XMLParsers.o",
+    "llvm-bc" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/XMLParsers.bc",
+    "object" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/XMLParsers.o",
+    "swift-dependencies" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/XMLParsers.swiftdeps",
+    "swiftmodule" : "/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp/.build/out/Intermediates.noindex/DeskJetPro.build/Debug/DeskJetPro-p.build/Objects-normal/arm64/XMLParsers~partial.swiftmodule"
+  }
+}

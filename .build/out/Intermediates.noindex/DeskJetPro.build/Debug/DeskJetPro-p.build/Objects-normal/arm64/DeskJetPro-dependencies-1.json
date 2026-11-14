@@ -1,0 +1,698 @@
+[
+  {
+    "isFramework" : true,
+    "moduleName" : "Accessibility",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-3CH3EYSDVLOX8.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "AppKit",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-21HDD3QK86F0K.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "ColorSync",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-3BV650R6E5RYX.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Combine",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Combine-195TTGHFY0FMP.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreAudio",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudio-1PRZUZG3FF2H7.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreData",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-1EP3H3YV2MN9L.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreFoundation",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-2NYWGDM51C7EG.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreGraphics",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-3OMZUHR6U6FXA.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreImage",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-2OOI55MZ4LB73.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreMedia",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreMedia-3LNZCO5HHC6Z0.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreText",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-1P6W9X0V31GYP.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreTransferable",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-2JWZH0Y0BC2IL.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreVideo",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-28ZJJ26CYWDIO.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Darwin",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-1KTOOXIYBQIZF.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "DataDetection",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-36EMXIPF3JVKY.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "DeveloperToolsSupport",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-92Q81OV8BRPI.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Dispatch",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-1HMI3FA7OP2FT.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Foundation",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-3CA4OYJSQCZW1.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "IOKit",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-VLHRGDOSFOZ2.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "ImageIO",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-2KO1RAJHRIT61.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Metal",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-VVYJ07QGMY6K.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "OSLog",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-CIAHK97I9QAZ.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "ObjectiveC",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-AP6K1HPSXWR8.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Observation",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Observation-2WER049C326ZL.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "PDFKit",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/PDFKit-6B0YM27JPSJ0.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "QuartzCore",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-2XU9C87Y6GTUZ.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Spatial",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-2PYM4T5FVQPPY.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Swift",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Swift-22NUWBEOO5CQR.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "SwiftOnoneSupport",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftOnoneSupport-19SX3K6SQ1SX3.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "SwiftUI",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUI-3I7I6DY2DM96O.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "SwiftUICore",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-HQP18TKI23D2.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Symbols",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-19YJ2UUUTV31U.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Synchronization",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Synchronization-1LS8TPC8KWOSO.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "System",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/System-1UCK3W2MQUWP.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "UniformTypeIdentifiers",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-3DLNG141JHXNW.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "XPC",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-330FB4W25X7IW.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_Builtin_float",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-32X9UX3EZIZZU.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_Concurrency",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Concurrency-3045LA05KOMX6.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation1",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-1PJYX66JW5D7T.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation2",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-16F3ICLJ6K0.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation3",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-135LYZLW67AH.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_StringProcessing",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_StringProcessing-2CQ29FKV93PNN.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "os",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/os-2XT7MCJIX00K6.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "simd",
+    "modulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/simd-2AFTJ91G4V0YM.swiftmodule"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Accessibility.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-EVM42U2NEGRHVG53LS5VHV37Z.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Accessibility"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/AppKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-4Y9J60NJ2XZXRWWQ5ERT4JUA8.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "AppKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ApplicationServices.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/ApplicationServices-60BFPVDG45MPFJ43D29WWRAEF.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ApplicationServices"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CFNetwork.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CFNetwork-C7L82ZA7LWU5W6HDSKTTBUHSI.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CFNetwork"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/cups.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CUPS-DHDXHJ8LA4GRAQZOWDQECEZTT.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CUPS"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Cocoa.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Cocoa-DOUN2WXA15RCMHZQVYLZNMR02.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Cocoa"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ColorSync.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-8JTSU52JPVDBSWTG7NW0RUIMS.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ColorSync"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreAudio.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudio-BKGI351NZX78MDNZMRX3H7BSJ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreAudio"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreAudioTypes.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudioTypes-2PANQ6U36J8YNLEX2K87K476L.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreAudioTypes"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreData.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-2H99B151RX02VLLO4YNL436T2.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreData"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreFoundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-4OO3GAG6ER4H3YUA7HZTPTS6B.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreFoundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreGraphics.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-62D62DZHLXL0EVKVWRK3NNXC8.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreGraphics"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreImage.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-7IQNGNW9K9YG5OC3JF6X42R7F.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreImage"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreMedia.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreMedia-4H4VSJDVUV5GLLJNDKL99RLQR.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreMedia"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreServices.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreServices-5QKX6RMUBR7XP5FK19VG3A103.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreServices"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreText.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-6VUCPJOE38SIC4IJZ96O25LJ6.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreText"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreTransferable.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-3CM1YGL8HTTMY9VCY7ZJWAKFH.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreTransferable"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreVideo.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-1DD75ZTF1FVJXHF0MS8DDQBF1.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreVideo"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/Darwin.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-5M6MOEF9C5GT8CLBC90TKYDAN.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Darwin"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DataDetection.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-7ARWEZG4SKCX45ZR4ZK35PSML.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DataDetection"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DeveloperToolsSupport.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-K4RNUYY0C5OHWPCIGKG1A7HY.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DeveloperToolsSupport"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DiskArbitration.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/DiskArbitration-5EAU2QFTOVW4G88NRAU3LQU18.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DiskArbitration"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/dispatch.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-YFNDC6B8LC37TTIYZ0WXPD1I.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Dispatch"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Foundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-8BSLSB86NRI6Y9UP3IMA1TBO2.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Foundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/IOKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-2SUFXMI2X49N36MGVSMF1HBRS.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "IOKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/IOSurface.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/IOSurface-EV6OXAL759BHHV427U81ZICFU.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "IOSurface"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ImageIO.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-99LDCYE97A2LT1K4KKXD0WHC5.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ImageIO"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinBasic.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/MachO-EZBHTXV5RULC4CQ66AFS8FQ26.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "MachO"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Metal.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-2WRP7584FKNJXI7BH7NS063KH.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Metal"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/OSLog.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-4LS6QW151IQMK63W7E0A996M2.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "OSLog"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/ObjectiveC.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-DCV0YL7PS0RG2G97QXXGOKBUR.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ObjectiveC"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/OpenGL.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/OpenGL-41JFKQ69CDX7VKVMJ5LGV6F08.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "OpenGL"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/PDFKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/PDFKit-1ILKT1UVZT9SRAEHE5SO69YEZ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "PDFKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/QuartzCore.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-750RC1N5ACV2HRY66DO3U98LH.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "QuartzCore"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Security.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Security-4BIQWXCR6UPHZS8LZOX8RZK0T.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Security"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/Spatial\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-9ATE6FJE3QWIPWWVW08RGDVLK.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Spatial"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftShims-7A7D5ZA0LV5F9YS1Y6K8C0807.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftShims"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/SwiftUI.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUI-77Q3CPCX0A192KSWV5K3GTOSA.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftUI"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/SwiftUICore.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-7KNXURK29QLG2WFR4UXIZ4B6L.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftUICore"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Symbols.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-CRR1PYE4PMAGE8XS970AXD92H.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Symbols"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/UniformTypeIdentifiers.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-608DXUP6EBGMZPULGFY2ZRJJC.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "UniformTypeIdentifiers"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/xpc.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-9WGWJGDJ0HP7908MPDLANML79.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "XPC"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation1.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_AvailabilityInternal-7XIEUWJH4XXTBQG6AGLREFSSX.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_AvailabilityInternal"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-1RGW957I07TS68VZ6EPFDVYU9.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_float"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_intrinsics-BN0BL0XGWJKH69UR29TDMMV50.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_intrinsics"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_inttypes-F1FCJ142MZNPI9FGTE39V2HAE.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_inttypes"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_limits-OEMQ30RAUCYGLS31CB2FXHSZ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_limits"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdarg-IDXEL6NIU8I0OBMXIZIBM2NW.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdarg"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdatomic-3TO4VUTA4L0Q8KIREAOOLAW41.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdatomic"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdbool-BFEJ6RP7ZYIAI4EOLZ9FYGRMV.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdbool"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stddef-3P2X6B5TZX9XXGUSD5L66E8YR.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stddef"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdint-5D3STX2SK2ZLPI29G4M87ZGNW.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdint"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_tgmath-4DXEWUVFN1EIRCADNDT9C6B8N.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_tgmath"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation1.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-8LSL8JU6HZ2343GS0VP8I7ATV.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation1"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation2.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-C73B6119T32PL79W8MF9OZK4K.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation2"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation3.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-92E1R3TA1Y5HIRUY8CX0K1XQD.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation3"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/_SwiftConcurrencyShims-BRJAVYQ38HCUN4K0VSOEAGSXK.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_SwiftConcurrencyShims"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/launch.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/launch-7320U306BU6GCSEG8ANNPB96S.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "launch"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/libDER\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/libDER-9EM2WBAEY2GCRVLQX8I9B3G1B.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "libDER"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/libkern.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/libkern-6QE7C1ND4JXA7YZFMFZIYIX9W.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "libkern"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/os-D937FQC9E3DPXS8OZM7YW5P29.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/os_object-AYOGBVITL7RC2961M07PKVCT4.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os_object"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/os_workgroup-3Y85MSE7E2Y7D1EFRVTRO30MM.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os_workgroup"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/ptrauth-58EAGAVG0DM1KLUF6RJK3CWPJ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ptrauth"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/ptrcheck-3SRJN9I8DK7R4U0ZZKCUPYNH8.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ptrcheck"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/simd\/module.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/simd-BG2JAH63E75Q483IB0JKATRWY.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "simd"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/c_standard_library.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/string_h-3M10WKQ1TEI780A7S7BK69F9U.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "string_h"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation2.modulemap",
+    "clangModulePath" : "\/Users\/ning-macmini\/.gemini\/antigravity\/scratch\/DeskJetNativeApp\/.build\/out\/SDKExplicitPrecompiledModules\/sys_types-4LHRBU0W2GO7MZBA8NM2CDNOM.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "sys_types"
+  }
+]
