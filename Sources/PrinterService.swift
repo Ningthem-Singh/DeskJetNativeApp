@@ -260,4 +260,94 @@ public class PrinterService: ObservableObject {
             NSWorkspace.shared.open(url)
         }
     }
+    
+    // MARK: - Wi-Fi Configuration
+    public func fetchWifiNetworks() async throws -> [WifiAP] {
+        guard printerInfo.port > 0 else {
+            throw NSError(domain: "PrinterService", code: 400, userInfo: [NSLocalizedDescriptionKey: "Printer is not connected via USB."])
+        }
+        guard let url = URL(string: "http://\(printerInfo.host):\(printerInfo.port)/IoMgmt/Adapters/Wifi0/WifiNetworks") else {
+            throw NSError(domain: "PrinterService", code: 400, userInfo: [NSLocalizedDescriptionKey: "Invalid Wi-Fi URL"])
+        }
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        guard let http = response as? HTTPURLResponse, http.statusCode == 200 else {
+            throw NSError(domain: "PrinterService", code: 500, userInfo: [NSLocalizedDescriptionKey: "Failed to scan Wi-Fi networks from printer."])
+        }
+        
+        let parser = WifiNetworksParser()
+        let xml = XMLParser(data: data)
+        xml.delegate = parser
+        if xml.parse() {
+            var unique: [String: WifiAP] = [:]
+            for ap in parser.networks {
+                if let existing = unique[ap.ssid] {
+                    if ap.signalStrength > existing.signalStrength {
+                        unique[ap.ssid] = ap
+                    }
+                } else {
+                    unique[ap.ssid] = ap
+                }
+            }
+            return unique.values.sorted { $0.signalStrength > $1.signalStrength }
+        }
+        return []
+    }
+    
+    public func connectToWifi(ap: WifiAP, password: String) async throws {
+        guard printerInfo.port > 0 else {
+            throw NSError(domain: "PrinterService", code: 400, userInfo: [NSLocalizedDescriptionKey: "Printer is not connected via USB."])
+        }
+        
+        guard let url = URL(string: "http://\(printerInfo.host):\(printerInfo.port)/IoMgmt/Adapters/Wifi0/Profiles/1") else {
+            throw NSError(domain: "PrinterService", code: 400, userInfo: [NSLocalizedDescriptionKey: "Invalid Wi-Fi Profile URL"])
+        }
+        
+        let hexPass = password.utf8.map { String(format: "%02x", $0) }.joined()
+        
+        let deltaXml: String
+        if ap.isSecure {
+            deltaXml = """
+            <?xml version="1.0" encoding="UTF-8"?>
+            <io:Profile xmlns:io="http://www.hp.com/schemas/imaging/con/ledm/iomgmt/2008/11/30" xmlns:wifi="http://www.hp.com/schemas/imaging/con/wifi/2009/06/26">
+                <io:AdapterProfile>
+                    <io:WifiProfile>
+                        <wifi:SSID>\(ap.hexSsid)</wifi:SSID>
+                        <wifi:BSSID>\(ap.bssid)</wifi:BSSID>
+                        <io:KeyInfo>
+                            <io:WpaPassPhraseInfo>
+                                <wifi:PassPhrase>\(hexPass)</wifi:PassPhrase>
+                            </io:WpaPassPhraseInfo>
+                        </io:KeyInfo>
+                    </io:WifiProfile>
+                </io:AdapterProfile>
+            </io:Profile>
+            """
+        } else {
+            deltaXml = """
+            <?xml version="1.0" encoding="UTF-8"?>
+            <io:Profile xmlns:io="http://www.hp.com/schemas/imaging/con/ledm/iomgmt/2008/11/30" xmlns:wifi="http://www.hp.com/schemas/imaging/con/wifi/2009/06/26">
+                <io:AdapterProfile>
+                    <io:WifiProfile>
+                        <wifi:SSID>\(ap.hexSsid)</wifi:SSID>
+                        <wifi:BSSID>\(ap.bssid)</wifi:BSSID>
+                        <wifi:EncryptionType>none</wifi:EncryptionType>
+                        <wifi:AuthenticationMode>open</wifi:AuthenticationMode>
+                    </io:WifiProfile>
+                </io:AdapterProfile>
+            </io:Profile>
+            """
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "PUT"
+        request.setValue("text/xml", forHTTPHeaderField: "Content-Type")
+        request.httpBody = deltaXml.data(using: .utf8)
+        
+        let (_, response) = try await URLSession.shared.data(for: request)
+        guard let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) else {
+            let code = (response as? HTTPURLResponse)?.statusCode ?? 500
+            throw NSError(domain: "PrinterService", code: code, userInfo: [NSLocalizedDescriptionKey: "Printer returned error code \(code) while setting Wi-Fi."])
+        }
+    }
 }

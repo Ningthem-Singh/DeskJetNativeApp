@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleName</key>
-    <string>DeskJet Native</string>
+    <string>HP DeskJet Studio Pro</string>
     <key>CFBundleDisplayName</key>
-    <string>DeskJet Native</string>
+    <string>HP DeskJet Studio Pro</string>
     <key>CFBundleIdentifier</key>
-    <string>com.local.deskjetnative</string>
+    <string>com.local.hpdeskjetstudiopro</string>
     <key>CFBundleVersion</key>
     <string>1.0.0</string>
     <key>CFBundleShortVersionString</key>
     <string>1.0</string>
     <key>CFBundleExecutable</key>
-    <string>DeskJet Native</string>
+    <string>HP DeskJet Studio Pro</string>
     <key>CFBundleIconFile</key>
     <string>AppIcon</string>
     <key>CFBundlePackageType</key>
@@ -23,7 +23,7 @@
     <key>NSHighResolutionCapable</key>
     <true/>
     <key>NSHumanReadableCopyright</key>
-    <string>Native Apple Silicon HP DeskJet Studio</string>
+    <string>Native Apple Silicon HP DeskJet Studio Pro</string>
     <key>LSApplicationCategoryType</key>
     <string>public.app-category.utilities</string>
     <key>NSAppTransportSecurity</key>

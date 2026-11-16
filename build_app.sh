@@ -4,28 +4,26 @@ set -e
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$PROJECT_DIR"
 
-echo "==> Building DeskJet Native for Apple Silicon (ARM64)..."
+echo "==> Building HP DeskJet Studio Pro for Apple Silicon (ARM64)..."
 
-# Find SwiftUIMacros if needed
 MACRO_LIB="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib"
 MACRO_FLAG=""
 if [ -f "$MACRO_LIB" ]; then
     MACRO_FLAG="-load-plugin-library $MACRO_LIB"
 fi
 
-swiftc -O -parse-as-library $MACRO_FLAG \
-    Sources/*.swift Sources/Views/*.swift \
-    -o "DeskJetBinary"
-
-echo "==> Packaging DeskJet Native.app bundle..."
-APP_BUNDLE="DeskJet Native.app"
+echo "==> Packaging HP DeskJet Studio Pro.app bundle..."
+APP_BUNDLE="HP DeskJet Studio Pro.app"
 mkdir -p "$APP_BUNDLE/Contents/MacOS"
 mkdir -p "$APP_BUNDLE/Contents/Resources"
 
-cp "DeskJetBinary" "$APP_BUNDLE/Contents/MacOS/DeskJet Native"
+swiftc -O -parse-as-library $MACRO_FLAG \
+    Sources/*.swift Sources/Views/*.swift \
+    -o "$APP_BUNDLE/Contents/MacOS/HP DeskJet Studio Pro"
+
 cp "AppIcon.icns" "$APP_BUNDLE/Contents/Resources/AppIcon.icns"
 cp "Info.plist" "$APP_BUNDLE/Contents/Info.plist"
-chmod +x "$APP_BUNDLE/Contents/MacOS/DeskJet Native"
+chmod +x "$APP_BUNDLE/Contents/MacOS/HP DeskJet Studio Pro"
 
 echo "==> Ad-hoc code signing for Apple Silicon..."
 codesign --force --deep --sign - "$APP_BUNDLE"

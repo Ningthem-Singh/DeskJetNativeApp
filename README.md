@@ -47,9 +47,14 @@ Located at:
 - **Project Source:** `/Users/ning-macmini/.gemini/antigravity/scratch/DeskJetNativeApp`
 
 ### Key Features:
-1. **Live Dashboard & Health:**
+1. **Live Dashboard & Wireless Wizard:**
    - Real-time printer status (Idle, Printing, Power Save).
    - Visual Ink Gauges for Black (HP 680) and Tri-Color (HP 680) cartridges.
+   - **One-Click "Connect Wirelessly" Wizard:**
+     - Directly queries the printer's `/IoMgmt/Adapters/Wifi0/WifiNetworks` API to scan nearby Wi-Fi APs.
+     - Displays network names with live signal bars (3 bars) and security lock badges.
+     - Allows entering your Wi-Fi password with eye reveal/hide toggle.
+     - Automatically delta-encodes and pushes credentials via the background LEDM REST API (`PUT /IoMgmt/Adapters/Wifi0/Profiles/1`) without ever opening a slow browser!
    - Quick diagnostics: 1-click Test Page, Embedded Web Server (EWS) launcher, and macOS settings shortcut.
 2. **Scan Studio:**
    - Native eSCL driverless communication with the flatbed platen.

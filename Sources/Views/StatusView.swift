@@ -4,6 +4,7 @@ struct StatusView: View {
     @ObservedObject var printerService: PrinterService
     @State private var isPrintingTestPage = false
     @State private var testPageMessage: String?
+    @State private var showWifiSetup: Bool = false
     
     var body: some View {
         ScrollView {
@@ -45,6 +46,15 @@ struct StatusView: View {
                     }
                     
                     Spacer()
+                    
+                    Button {
+                        showWifiSetup = true
+                    } label: {
+                        Label("Connect Wirelessly", systemImage: "wifi.badge.plus")
+                            .bold()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.blue)
                     
                     Button {
                         Task {
@@ -167,6 +177,9 @@ struct StatusView: View {
                 Spacer()
             }
             .padding(20)
+        }
+        .sheet(isPresented: $showWifiSetup) {
+            WifiSetupSheet(printerService: printerService)
         }
     }
 }

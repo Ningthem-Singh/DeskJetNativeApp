@@ -126,3 +126,28 @@ public struct CupsPrintJob: Identifiable, Sendable {
     public let size: String
     public let state: String
 }
+
+// MARK: - Wi-Fi Access Point Model
+public struct WifiAP: Identifiable, Hashable, Sendable {
+    public var id: String { bssid.isEmpty ? hexSsid : bssid }
+    public let ssid: String
+    public let hexSsid: String
+    public let bssid: String
+    public let signalStrength: Int // 0 to 3
+    public let dbm: Int
+    public let encryptionType: String
+    
+    public var isSecure: Bool {
+        return encryptionType.lowercased() != "none"
+    }
+    
+    public var signalIconName: String {
+        switch signalStrength {
+        case 3...: return "wifi"
+        case 2: return "wifi"
+        case 1: return "wifi"
+        default: return "wifi.slash"
+        }
+    }
+}
+
