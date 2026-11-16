@@ -42,7 +42,7 @@ struct ContentView: View {
                     Circle()
                         .fill(printerService.printerInfo.isConnected ? Color.green : Color.red)
                         .frame(width: 8, height: 8)
-                    Text(printerService.printerInfo.isConnected ? "USB Online" : "USB Offline")
+                    Text(printerService.printerInfo.connectionLabel)
                         .font(.caption)
                         .bold()
                     Spacer()

@@ -20,18 +20,19 @@ public class ScannerService: ObservableObject {
     // MARK: - Execute eSCL Scan
     public func startScan(host: String, port: Int) async {
         guard port > 0 else {
-            scanState = .failed("Printer USB port is not available.")
+            scanState = .failed("Printer connection is not available.")
             return
         }
         
         scanState = .preparing
         progress = 0.1
-        progressMessage = "Connecting to scanner..."
+        progressMessage = "Connecting to scanner (\(host):\(port))..."
         
         // 1. Check Scanner Readiness
         let statusURL = URL(string: "http://\(host):\(port)/eSCL/ScannerStatus")!
         do {
-            let (statusData, statusResp) = try await URLSession.shared.data(from: statusURL)
+            let statusReq = URLRequest(url: statusURL, timeoutInterval: 8.0)
+            let (statusData, statusResp) = try await URLSession.shared.data(for: statusReq)
             if let http = statusResp as? HTTPURLResponse, http.statusCode == 200 {
                 let statusStr = String(data: statusData, encoding: .utf8) ?? ""
                 if statusStr.contains("<pwg:State>Processing</pwg:State>") || statusStr.contains("<pwg:State>Testing</pwg:State>") {
@@ -40,7 +41,7 @@ public class ScannerService: ObservableObject {
                 }
             }
         } catch {
-            scanState = .failed("Could not connect to scanner: \(error.localizedDescription)")
+            scanState = .failed("Could not connect to scanner at \(host):\(port): \(error.localizedDescription)")
             return
         }
         
@@ -49,9 +50,10 @@ public class ScannerService: ObservableObject {
         
         // 2. Build eSCL Scan Job Request
         let jobsURL = URL(string: "http://\(host):\(port)/eSCL/ScanJobs")!
-        var request = URLRequest(url: jobsURL)
+        var request = URLRequest(url: jobsURL, timeoutInterval: 15.0)
         request.httpMethod = "POST"
         request.setValue("text/xml", forHTTPHeaderField: "Content-Type")
+        request.setValue("", forHTTPHeaderField: "Expect") // Prevent HP embedded server Expect: 100-continue hang
         
         let xmlPayload = """
         <?xml version="1.0" encoding="UTF-8"?>
@@ -59,6 +61,7 @@ public class ScannerService: ObservableObject {
             <pwg:Version>2.62</pwg:Version>
             <scan:Intent>Document</scan:Intent>
             <pwg:InputSource>Platen</pwg:InputSource>
+            <scan:InputSource>Platen</scan:InputSource>
             <scan:ColorMode>\(colorMode.rawValue)</scan:ColorMode>
             <scan:XResolution>\(resolution.rawValue)</scan:XResolution>
             <scan:YResolution>\(resolution.rawValue)</scan:YResolution>
@@ -70,7 +73,12 @@ public class ScannerService: ObservableObject {
         do {
             let (_, response) = try await URLSession.shared.data(for: request)
             guard let http = response as? HTTPURLResponse else {
-                scanState = .failed("Invalid server response")
+                scanState = .failed("Invalid server response from scanner.")
+                return
+            }
+            
+            if http.statusCode == 503 {
+                scanState = .failed("Scanner is busy or paused with an alert. Please check: 1) Paper is loaded in the input tray, 2) The output tray is open, 3) Press the blinking Resume / Cancel button on the printer to clear any pending jobs.")
                 return
             }
             
@@ -81,7 +89,7 @@ public class ScannerService: ObservableObject {
             
             // 3. Extract Job URL from Location header
             guard let locationHeader = http.value(forHTTPHeaderField: "Location") else {
-                scanState = .failed("No job location returned by scanner")
+                scanState = .failed("No job location returned by scanner.")
                 return
             }
             
@@ -103,7 +111,8 @@ public class ScannerService: ObservableObject {
             progress = 0.5
             progressMessage = "Scanning in progress... Please wait."
             
-            let (docData, docResp) = try await URLSession.shared.data(from: documentURL)
+            let docRequest = URLRequest(url: documentURL, timeoutInterval: 60.0)
+            let (docData, docResp) = try await URLSession.shared.data(for: docRequest)
             guard let docHttp = docResp as? HTTPURLResponse, docHttp.statusCode == 200 else {
                 scanState = .failed("Failed to retrieve scanned document data.")
                 return

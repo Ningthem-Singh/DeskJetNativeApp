@@ -78,8 +78,8 @@ struct ScanView: View {
                     zoomScale = 1.0
                     Task {
                         await scannerService.startScan(
-                            host: printerService.printerInfo.host,
-                            port: printerService.printerInfo.port
+                            host: printerService.printerInfo.ipAddress,
+                            port: printerService.printerInfo.httpPort
                         )
                     }
                 } label: {

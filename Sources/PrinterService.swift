@@ -27,7 +27,8 @@ public class PrinterService: ObservableObject {
     }
     
     // MARK: - Discovery
-    public func discoverPrinterPort() -> (host: String, port: Int)? {
+    // MARK: - Discovery
+    public func discoverPrinter() -> (host: String, httpHost: String, ippPort: Int, httpPort: Int, isWifi: Bool)? {
         let task = Process()
         task.executableURL = URL(fileURLWithPath: "/usr/bin/ippfind")
         task.arguments = ["_ipp._tcp"]
@@ -43,10 +44,41 @@ public class PrinterService: ObservableObject {
                let url = URL(string: firstLine),
                let host = url.host,
                let port = url.port {
-                return (host, port)
+                
+                let isLocalUSB = (host == "localhost" || host == "127.0.0.1")
+                if isLocalUSB {
+                    return (host: "localhost", httpHost: "127.0.0.1", ippPort: port, httpPort: port, isWifi: false)
+                } else {
+                    // Over Wi-Fi: Resolve IPv4 address to prevent macOS link-local IPv6 hangs
+                    let resolvedIP = resolveIPv4(hostname: host) ?? host
+                    return (host: host, httpHost: resolvedIP, ippPort: port, httpPort: 80, isWifi: true)
+                }
             }
         } catch {
             print("Discovery error: \(error)")
+        }
+        return nil
+    }
+    
+    private func resolveIPv4(hostname: String) -> String? {
+        if hostname == "localhost" || hostname == "127.0.0.1" { return "127.0.0.1" }
+        var hints = addrinfo(
+            ai_flags: AI_DEFAULT,
+            ai_family: AF_INET,
+            ai_socktype: SOCK_STREAM,
+            ai_protocol: 0,
+            ai_addrlen: 0,
+            ai_canonname: nil,
+            ai_addr: nil,
+            ai_next: nil
+        )
+        var res: UnsafeMutablePointer<addrinfo>?
+        guard getaddrinfo(hostname, nil, &hints, &res) == 0, let first = res else { return nil }
+        defer { freeaddrinfo(res) }
+        
+        var buffer = [CChar](repeating: 0, count: Int(NI_MAXHOST))
+        if getnameinfo(first.pointee.ai_addr, first.pointee.ai_addrlen, &buffer, socklen_t(buffer.count), nil, 0, NI_NUMERICHOST) == 0 {
+            return String(cString: buffer)
         }
         return nil
     }
@@ -56,15 +88,18 @@ public class PrinterService: ObservableObject {
         isLoading = true
         errorMessage = nil
         
-        guard let (host, port) = discoverPrinterPort() else {
+        guard let disc = discoverPrinter() else {
             printerInfo.isConnected = false
-            errorMessage = "Printer not detected on USB. Please check USB connection."
+            errorMessage = "Printer not detected. Please check USB connection or Wi-Fi network."
             isLoading = false
             return
         }
         
-        printerInfo.host = host
-        printerInfo.port = port
+        printerInfo.host = disc.host
+        printerInfo.ipAddress = disc.httpHost
+        printerInfo.port = disc.ippPort
+        printerInfo.httpPort = disc.httpPort
+        printerInfo.isWifi = disc.isWifi
         printerInfo.isConnected = true
         
         await fetchProductStatus()
@@ -76,16 +111,17 @@ public class PrinterService: ObservableObject {
     }
     
     public func refreshStatusOnly() async {
-        guard printerInfo.isConnected && printerInfo.port > 0 else { return }
+        guard printerInfo.isConnected && printerInfo.httpPort > 0 else { return }
         await fetchProductStatus()
         await fetchQueue()
     }
     
     // MARK: - HTTP Fetchers
     private func fetchProductStatus() async {
-        guard let url = URL(string: "http://\(printerInfo.host):\(printerInfo.port)/DevMgmt/ProductStatusDyn.xml") else { return }
+        guard let url = URL(string: "http://\(printerInfo.ipAddress):\(printerInfo.httpPort)/DevMgmt/ProductStatusDyn.xml") else { return }
         do {
-            let (data, response) = try await URLSession.shared.data(from: url)
+            let request = URLRequest(url: url, timeoutInterval: 5.0)
+            let (data, response) = try await URLSession.shared.data(for: request)
             if let http = response as? HTTPURLResponse, http.statusCode == 200 {
                 let parser = ProductStatusParser()
                 let xml = XMLParser(data: data)
@@ -100,9 +136,10 @@ public class PrinterService: ObservableObject {
     }
     
     private func fetchConsumables() async {
-        guard let url = URL(string: "http://\(printerInfo.host):\(printerInfo.port)/DevMgmt/ConsumableConfigDyn.xml") else { return }
+        guard let url = URL(string: "http://\(printerInfo.ipAddress):\(printerInfo.httpPort)/DevMgmt/ConsumableConfigDyn.xml") else { return }
         do {
-            let (data, response) = try await URLSession.shared.data(from: url)
+            let request = URLRequest(url: url, timeoutInterval: 5.0)
+            let (data, response) = try await URLSession.shared.data(for: request)
             if let http = response as? HTTPURLResponse, http.statusCode == 200 {
                 let parser = ConsumablesParser()
                 let xml = XMLParser(data: data)
@@ -117,9 +154,10 @@ public class PrinterService: ObservableObject {
     }
     
     private func fetchCapabilities() async {
-        guard let url = URL(string: "http://\(printerInfo.host):\(printerInfo.port)/eSCL/ScannerCapabilities") else { return }
+        guard let url = URL(string: "http://\(printerInfo.ipAddress):\(printerInfo.httpPort)/eSCL/ScannerCapabilities") else { return }
         do {
-            let (data, response) = try await URLSession.shared.data(from: url)
+            let request = URLRequest(url: url, timeoutInterval: 5.0)
+            let (data, response) = try await URLSession.shared.data(for: request)
             if let http = response as? HTTPURLResponse, http.statusCode == 200 {
                 let parser = ScannerCapabilitiesParser()
                 let xml = XMLParser(data: data)
@@ -256,21 +294,22 @@ public class PrinterService: ObservableObject {
     }
     
     public func openEmbeddedWebServer() {
-        if printerInfo.port > 0, let url = URL(string: "http://\(printerInfo.host):\(printerInfo.port)/") {
+        if printerInfo.httpPort > 0, let url = URL(string: "http://\(printerInfo.ipAddress):\(printerInfo.httpPort)/") {
             NSWorkspace.shared.open(url)
         }
     }
     
     // MARK: - Wi-Fi Configuration
     public func fetchWifiNetworks() async throws -> [WifiAP] {
-        guard printerInfo.port > 0 else {
-            throw NSError(domain: "PrinterService", code: 400, userInfo: [NSLocalizedDescriptionKey: "Printer is not connected via USB."])
+        guard printerInfo.httpPort > 0 else {
+            throw NSError(domain: "PrinterService", code: 400, userInfo: [NSLocalizedDescriptionKey: "Printer is not connected."])
         }
-        guard let url = URL(string: "http://\(printerInfo.host):\(printerInfo.port)/IoMgmt/Adapters/Wifi0/WifiNetworks") else {
+        guard let url = URL(string: "http://\(printerInfo.ipAddress):\(printerInfo.httpPort)/IoMgmt/Adapters/Wifi0/WifiNetworks") else {
             throw NSError(domain: "PrinterService", code: 400, userInfo: [NSLocalizedDescriptionKey: "Invalid Wi-Fi URL"])
         }
         
-        let (data, response) = try await URLSession.shared.data(from: url)
+        let request = URLRequest(url: url, timeoutInterval: 10.0)
+        let (data, response) = try await URLSession.shared.data(for: request)
         guard let http = response as? HTTPURLResponse, http.statusCode == 200 else {
             throw NSError(domain: "PrinterService", code: 500, userInfo: [NSLocalizedDescriptionKey: "Failed to scan Wi-Fi networks from printer."])
         }
@@ -295,11 +334,11 @@ public class PrinterService: ObservableObject {
     }
     
     public func connectToWifi(ap: WifiAP, password: String) async throws {
-        guard printerInfo.port > 0 else {
-            throw NSError(domain: "PrinterService", code: 400, userInfo: [NSLocalizedDescriptionKey: "Printer is not connected via USB."])
+        guard printerInfo.httpPort > 0 else {
+            throw NSError(domain: "PrinterService", code: 400, userInfo: [NSLocalizedDescriptionKey: "Printer is not connected."])
         }
         
-        guard let url = URL(string: "http://\(printerInfo.host):\(printerInfo.port)/IoMgmt/Adapters/Wifi0/Profiles/1") else {
+        guard let url = URL(string: "http://\(printerInfo.ipAddress):\(printerInfo.httpPort)/IoMgmt/Adapters/Wifi0/Profiles/1") else {
             throw NSError(domain: "PrinterService", code: 400, userInfo: [NSLocalizedDescriptionKey: "Invalid Wi-Fi Profile URL"])
         }
         

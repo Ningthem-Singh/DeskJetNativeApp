@@ -40,7 +40,7 @@ struct StatusView: View {
                             .background(Capsule().fill(Color.secondary.opacity(0.12)))
                         }
                         
-                        Text("Connected via USB (AirPrint IPP-over-USB) • Native Apple Silicon M-Series Engine")
+                        Text("Connected via \(printerService.printerInfo.isWifi ? "Wi-Fi (AirPrint Wireless)" : "USB (AirPrint IPP-over-USB)") • Native Apple Silicon Engine")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                     }
@@ -75,7 +75,7 @@ struct StatusView: View {
                         .font(.headline)
                     
                     if printerService.printerInfo.cartridges.isEmpty {
-                        Text("No cartridge data available. Please check USB connection.")
+                        Text("No cartridge data available. Please check printer connection.")
                             .foregroundColor(.secondary)
                             .padding()
                     } else {

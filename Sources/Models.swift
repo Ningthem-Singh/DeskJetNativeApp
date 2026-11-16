@@ -28,11 +28,21 @@ public struct PrinterInfo: Sendable {
     public var serialNumber: String = ""
     public var firmwareVersion: String = ""
     public var host: String = "localhost"
-    public var port: Int = 0
+    public var port: Int = 0        // IPP Port (e.g. 58771 on USB, 631 on Wi-Fi)
+    public var httpPort: Int = 80   // HTTP Web / eSCL Port (e.g. 58771 on USB, 80 on Wi-Fi)
+    public var ipAddress: String = "127.0.0.1" // Resolved IPv4 address
+    public var isWifi: Bool = false
     public var statusCategory: String = "Unknown"
     public var isConnected: Bool = false
     public var cupsQueueName: String = "HP_DeskJet_2600_series"
     public var cartridges: [InkCartridge] = []
+    
+    public var connectionLabel: String {
+        if !isConnected {
+            return "Offline"
+        }
+        return isWifi ? "Wi-Fi Online (\(ipAddress))" : "USB Online"
+    }
     
     public var isPowerSave: Bool {
         return statusCategory.lowercased().contains("powersave")
@@ -47,6 +57,8 @@ public struct PrinterInfo: Sendable {
             return "Energy Saver (Ready)"
         } else if lower.contains("idle") {
             return "Idle (Ready)"
+        } else if lower.contains("trayempty") || lower.contains("trayopen") {
+            return "Attention: Paper Tray Empty / Open"
         } else if lower.contains("printing") || lower.contains("processing") {
             return "Printing / Busy"
         }
