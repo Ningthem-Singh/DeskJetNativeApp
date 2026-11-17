@@ -79,7 +79,7 @@ struct ScanView: View {
                     Task {
                         await scannerService.startScan(
                             host: printerService.printerInfo.ipAddress,
-                            port: printerService.printerInfo.httpPort
+                            port: printerService.printerInfo.scannerPort
                         )
                     }
                 } label: {

@@ -14,8 +14,8 @@ public class PrinterService: ObservableObject {
         Task {
             await refreshAll()
         }
-        // Auto-refresh printer health every 15 seconds
-        refreshTimer = Timer.scheduledTimer(withTimeInterval: 15.0, repeats: true) { [weak self] _ in
+        // Auto-refresh printer health every 60 seconds (prevents Wi-Fi socket contention)
+        refreshTimer = Timer.scheduledTimer(withTimeInterval: 60.0, repeats: true) { [weak self] _ in
             Task { @MainActor [weak self] in
                 await self?.refreshStatusOnly()
             }
@@ -28,7 +28,7 @@ public class PrinterService: ObservableObject {
     
     // MARK: - Discovery
     // MARK: - Discovery
-    public func discoverPrinter() -> (host: String, httpHost: String, ippPort: Int, httpPort: Int, isWifi: Bool)? {
+    public func discoverPrinter() -> (host: String, httpHost: String, ippPort: Int, httpPort: Int, scannerPort: Int, isWifi: Bool)? {
         let task = Process()
         task.executableURL = URL(fileURLWithPath: "/usr/bin/ippfind")
         task.arguments = ["_ipp._tcp"]
@@ -47,11 +47,11 @@ public class PrinterService: ObservableObject {
                 
                 let isLocalUSB = (host == "localhost" || host == "127.0.0.1")
                 if isLocalUSB {
-                    return (host: "localhost", httpHost: "127.0.0.1", ippPort: port, httpPort: port, isWifi: false)
+                    return (host: "localhost", httpHost: "127.0.0.1", ippPort: port, httpPort: port, scannerPort: port, isWifi: false)
                 } else {
                     // Over Wi-Fi: Resolve IPv4 address to prevent macOS link-local IPv6 hangs
                     let resolvedIP = resolveIPv4(hostname: host) ?? host
-                    return (host: host, httpHost: resolvedIP, ippPort: port, httpPort: 80, isWifi: true)
+                    return (host: host, httpHost: resolvedIP, ippPort: port, httpPort: 80, scannerPort: 8080, isWifi: true)
                 }
             }
         } catch {
@@ -99,6 +99,7 @@ public class PrinterService: ObservableObject {
         printerInfo.ipAddress = disc.httpHost
         printerInfo.port = disc.ippPort
         printerInfo.httpPort = disc.httpPort
+        printerInfo.scannerPort = disc.scannerPort
         printerInfo.isWifi = disc.isWifi
         printerInfo.isConnected = true
         
@@ -120,7 +121,8 @@ public class PrinterService: ObservableObject {
     private func fetchProductStatus() async {
         guard let url = URL(string: "http://\(printerInfo.ipAddress):\(printerInfo.httpPort)/DevMgmt/ProductStatusDyn.xml") else { return }
         do {
-            let request = URLRequest(url: url, timeoutInterval: 5.0)
+            var request = URLRequest(url: url, timeoutInterval: 6.0)
+            request.setValue("close", forHTTPHeaderField: "Connection")
             let (data, response) = try await URLSession.shared.data(for: request)
             if let http = response as? HTTPURLResponse, http.statusCode == 200 {
                 let parser = ProductStatusParser()
@@ -138,7 +140,8 @@ public class PrinterService: ObservableObject {
     private func fetchConsumables() async {
         guard let url = URL(string: "http://\(printerInfo.ipAddress):\(printerInfo.httpPort)/DevMgmt/ConsumableConfigDyn.xml") else { return }
         do {
-            let request = URLRequest(url: url, timeoutInterval: 5.0)
+            var request = URLRequest(url: url, timeoutInterval: 6.0)
+            request.setValue("close", forHTTPHeaderField: "Connection")
             let (data, response) = try await URLSession.shared.data(for: request)
             if let http = response as? HTTPURLResponse, http.statusCode == 200 {
                 let parser = ConsumablesParser()
@@ -156,7 +159,8 @@ public class PrinterService: ObservableObject {
     private func fetchCapabilities() async {
         guard let url = URL(string: "http://\(printerInfo.ipAddress):\(printerInfo.httpPort)/eSCL/ScannerCapabilities") else { return }
         do {
-            let request = URLRequest(url: url, timeoutInterval: 5.0)
+            var request = URLRequest(url: url, timeoutInterval: 6.0)
+            request.setValue("close", forHTTPHeaderField: "Connection")
             let (data, response) = try await URLSession.shared.data(for: request)
             if let http = response as? HTTPURLResponse, http.statusCode == 200 {
                 let parser = ScannerCapabilitiesParser()

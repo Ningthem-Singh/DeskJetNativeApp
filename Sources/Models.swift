@@ -29,7 +29,8 @@ public struct PrinterInfo: Sendable {
     public var firmwareVersion: String = ""
     public var host: String = "localhost"
     public var port: Int = 0        // IPP Port (e.g. 58771 on USB, 631 on Wi-Fi)
-    public var httpPort: Int = 80   // HTTP Web / eSCL Port (e.g. 58771 on USB, 80 on Wi-Fi)
+    public var httpPort: Int = 80   // HTTP Web Port (e.g. 58771 on USB, 80 on Wi-Fi)
+    public var scannerPort: Int = 8080 // Dedicated AirScan eSCL Port (8080 on Wi-Fi, dynamic on USB)
     public var ipAddress: String = "127.0.0.1" // Resolved IPv4 address
     public var isWifi: Bool = false
     public var statusCategory: String = "Unknown"
