@@ -146,9 +146,9 @@ public class ScannerService: ObservableObject {
             // 4. Download Scanned Data
             scanState = .scanning
             progress = 0.5
-            progressMessage = "Scanning in progress... Please wait."
+            progressMessage = resolution == .dpi1200 ? "Scanning at 1200 DPI (Ultra Detail)... Please wait." : "Scanning in progress... Please wait."
             
-            var docRequest = URLRequest(url: documentURL, timeoutInterval: 120.0)
+            var docRequest = URLRequest(url: documentURL, timeoutInterval: 180.0)
             docRequest.setValue("close", forHTTPHeaderField: "Connection")
             let (docData, docResp) = try await URLSession.shared.data(for: docRequest)
             guard let docHttp = docResp as? HTTPURLResponse, docHttp.statusCode == 200 else {

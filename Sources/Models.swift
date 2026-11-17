@@ -74,6 +74,7 @@ public enum ScanResolution: Int, CaseIterable, Identifiable, Sendable {
     case dpi200 = 200
     case dpi300 = 300
     case dpi600 = 600
+    case dpi1200 = 1200
     
     public var id: Int { rawValue }
     public var description: String {
@@ -83,6 +84,7 @@ public enum ScanResolution: Int, CaseIterable, Identifiable, Sendable {
         case .dpi200: return "200 DPI"
         case .dpi300: return "300 DPI (Recommended / Sharp)"
         case .dpi600: return "600 DPI (High Detail)"
+        case .dpi1200: return "1200 DPI (Maximum / Ultra Detail)"
         }
     }
 }
