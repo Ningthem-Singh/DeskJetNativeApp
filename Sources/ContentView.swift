@@ -22,9 +22,10 @@ struct ContentView: View {
     @StateObject private var printerService = PrinterService()
     @StateObject private var scannerService = ScannerService()
     @State private var selectedTab: NavigationItem = .status
+    @State private var columnVisibility: NavigationSplitViewVisibility = .all
     
     var body: some View {
-        NavigationSplitView {
+        NavigationSplitView(columnVisibility: $columnVisibility) {
             List(NavigationItem.allCases, selection: $selectedTab) { item in
                 NavigationLink(value: item) {
                     Label(item.rawValue, systemImage: item.icon)
@@ -33,7 +34,7 @@ struct ContentView: View {
                 }
             }
             .listStyle(.sidebar)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200, max: 240)
+            .navigationSplitViewColumnWidth(min: 190, ideal: 210, max: 240)
             
             // Sidebar Footer
             VStack(alignment: .leading, spacing: 6) {
@@ -66,8 +67,10 @@ struct ContentView: View {
                     QueueView(printerService: printerService)
                 }
             }
-            .frame(minWidth: 650, minHeight: 500)
+            .frame(minWidth: 720, minHeight: 520)
         }
+        .navigationSplitViewStyle(.balanced)
+        .frame(minWidth: 960, minHeight: 580)
         .navigationTitle("HP DeskJet Studio Pro")
     }
 }

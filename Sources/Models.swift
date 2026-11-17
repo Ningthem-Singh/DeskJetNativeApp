@@ -100,6 +100,13 @@ public enum ScanColorMode: String, CaseIterable, Identifiable, Sendable {
         case .blackAndWhite1: return "Black & White (Text)"
         }
     }
+    public var shortTitle: String {
+        switch self {
+        case .rgb24: return "Color"
+        case .grayscale8: return "Grayscale"
+        case .blackAndWhite1: return "B&W"
+        }
+    }
 }
 
 public enum ScanOutputFormat: String, CaseIterable, Identifiable, Sendable {
@@ -111,6 +118,12 @@ public enum ScanOutputFormat: String, CaseIterable, Identifiable, Sendable {
         switch self {
         case .jpeg: return "JPEG Image"
         case .pdf: return "PDF Document"
+        }
+    }
+    public var shortName: String {
+        switch self {
+        case .jpeg: return "JPEG"
+        case .pdf: return "PDF"
         }
     }
     

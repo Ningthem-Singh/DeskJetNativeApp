@@ -8,6 +8,6 @@ struct DeskJetApp: App {
         }
         .windowStyle(.titleBar)
         .windowToolbarStyle(.unified)
-        .defaultSize(width: 920, height: 640)
+        .defaultSize(width: 1080, height: 700)
     }
 }
